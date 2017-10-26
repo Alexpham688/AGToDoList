@@ -9,7 +9,7 @@ app.controller('myCtrl', function($scope){
   ];
   //add item
   $scope.addItem = function(newItem){
-    $scope.temp = false;
+    // $scope.temp = false;
     $scope.list.push(newItem)
     $scope.item = "";
   };
@@ -21,13 +21,4 @@ app.controller('myCtrl', function($scope){
   $scope.plural = function(list){
     return list.length > 1 || list.length == 0 ? 's' :'';
   };
-
-  $scope.addTemp = function(item) {
-    if($scope.temp) $scope.list.pop();
-    else if($scope.addName) $scope.temp = true;
-    if($scope.addName)
-    $scope.list.push($scope.addName);
-    else $scope.temp = false;
-    };
-
 });
