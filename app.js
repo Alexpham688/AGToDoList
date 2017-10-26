@@ -7,11 +7,9 @@ app.controller('myCtrl', function($scope){
     'mop the floor',
     'get the dry clean'
   ];
-  // $scope.temp = false;
   //add item
   $scope.addItem = function(newItem){
     $scope.temp = false;
-    // $scope.addChore = "";
     $scope.list.push(newItem)
     $scope.item = "";
   };
