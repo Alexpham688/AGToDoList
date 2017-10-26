@@ -1,0 +1,71 @@
+#form-container {
+  width: 700px;
+  margin: 0 auto;
+  font-family: 'imagine_font';
+  src:url('imagine_font/imagine_font.otf');
+}
+h2 {
+  margin-left: 20px;
+  border-bottom: 2px solid #222
+}
+header {
+  width: 800px;
+  padding: 8px 8px;
+  background: #e9e9e9;
+  margin: 0 auto;
+  font-family: 'digital_desolation_plus';
+  src:url('digital_desolation_plus/Digital-Desolation-Plus.otf');
+  text-align: center;
+}
+@font-face {
+  font-family: 'imagine_font';
+  src:url('imagine_font/imagine_font.otf');
+}
+@font-face {
+  font-family: 'digital_desolation_plus';
+  src:url('digital_desolation_plus/Digital-Desolation-Plus.otf');
+}
+#search {
+  width: 200px;
+  font-size: 1em;
+  border: 2px solid #222;
+}
+#add {
+  font-size: 1em;
+  padding: 0 7px 0 5px;
+  width: 200px;
+  height: 35px;
+  border: 2px solid #222;
+
+}
+input:focus {
+  background: #222;
+  color: #fff;
+}
+#submit {
+  margin-right: 20px;
+}
+.glyphicon-search{
+  padding: 0 5px;;
+}
+input {
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+#remove {
+  float: right;
+  margin-top: -7px;
+}
+ol {
+  display: inline;
+  font-family: 'imagine_font';
+  src:url('imagine_font/imagine_font.otf');
+}
+form {
+  margin-bottom: 20px;
+
+}
+.list-group-item:nth-child(odd){
+  background: #eee;
+}

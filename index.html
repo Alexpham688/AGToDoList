@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular To Do</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">
+    <header>
+      <h1>Angular To Do List</h1>
+    </header>
+    <div id="container">
+      <div id="form-container" class='input-group'>
+        <h2>You Have {{list.length}} Chore{{plural(list)}}</h2>
+        <form class="form-horizontal">
+          <span>
+            <input id="add"type="text" placeholder="Add something..." ng-model="item">
+            <input id="submit"type="submit" class="btn btn-primary" ng-click="addItem(item)"ng-show="item">
+          </span>
+          <span class="input-group search">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+           <input id="search" type="text" class="form-control" placeholder="Search..." ng-model="search">
+            <button type="submit" class='btn btn-inverse' ng-click="search=''" ng-show="search" value="+ add"><i class="glyphicon glyphicon-remove glyphicon-white"></i></button>
+          </span >
+        </form>
+          <div ng-repeat ='item in list | filter:search track by $index'>
+            <ol class="list-group" >
+              <li class="list-group-item "> {{item}}
+                <button id="remove"type="button" class="btn btn-danger btn-mini"ng-click="deleteRow(item)"ng-hide="listName($index)"><i class="glyphicon glyphicon-trash glyphicon-white"></i></button>
+              </li>
+            </ol>
+          </div>
+      <!--form container-->
+      </div>
+      <!--container-->
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
