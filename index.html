@@ -20,8 +20,8 @@
           </span>
           <span class="input-group search">
             <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-           <input id="search" type="text" class="form-control" placeholder="Search..." ng-model="search">
-            <button type="submit" class='btn btn-inverse' ng-click="search=''" ng-show="search" value="+ add"><i class="glyphicon glyphicon-remove glyphicon-white"></i></button>
+              <input id="search" type="text" class="form-control" placeholder="Search..." ng-model="search">
+              <button type="submit" class='btn btn-inverse' ng-click="search=''" ng-show="search" value="+ add"><i class="glyphicon glyphicon-remove glyphicon-white"></i></button>
           </span >
         </form>
           <div ng-repeat ='item in list | filter:search track by $index'>
