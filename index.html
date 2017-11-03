@@ -12,7 +12,7 @@
     </header>
     <div id="container">
       <div id="form-container" class='input-group'>
-        <h2>You Have {{list.length}} Chore{{plural(list)}}</h2>
+        <h2>You Have <span class="number">{{list.length}}</span> Chore{{plural(list)}}</h2>
         <form class="form-horizontal">
           <span>
             <input id="add"type="text" placeholder="Add something..." ng-model="item">

@@ -69,3 +69,6 @@ form {
 .list-group-item:nth-child(odd){
   background: #eee;
 }
+.number {
+  color: #db0000;
+}
